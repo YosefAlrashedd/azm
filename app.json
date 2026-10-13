@@ -1,0 +1,83 @@
+{
+  "expo": {
+    "name": "Azm",
+    "slug": "azm",
+    "version": "1.0.0",
+    "scheme": "azm",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#F2F3F0",
+    "runtimeVersion": "exposdk:57.0.0",
+    "locales": {
+      "ar": "./locales/ar.json",
+      "en": "./locales/en.json"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.azm.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.azm.app",
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#2C5A86",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "bundler": "metro",
+      "name": "عزم",
+      "shortName": "عزم",
+      "themeColor": "#2C5A86",
+      "backgroundColor": "#F2F3F0"
+    },
+    "extra": {
+      "supportsRTL": false
+    },
+    "plugins": [
+      [
+        "expo-localization",
+        {
+          "supportsRTL": false
+        }
+      ],
+      "expo-font",
+      "expo-background-task",
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Azm reads your step count to track your daily step goal."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#2C5A86"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 140,
+          "backgroundColor": "#F2F3F0",
+          "dark": {
+            "image": "./assets/splash-icon.png",
+            "backgroundColor": "#111413"
+          }
+        }
+      ]
+    ]
+  }
+}
